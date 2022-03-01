@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "c2bf7ad7-6cd7-4013-bb12-69fe880b056f",
+		"name": "Devices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllDevices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7095/api/Devices",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7095",
+					"path": [
+						"api",
+						"Devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Devides",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7095/api/Devices",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7095",
+					"path": [
+						"api",
+						"Devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Device",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Device",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"deviceId\": 4,\r\n        \"userId\": 1,\r\n        \"name\": \"Thermostat\",\r\n        \"status\": \"Available\",\r\n        \"mode\": \"Enabled\",\r\n        \"User\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7095/api/Devices/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7095",
+					"path": [
+						"api",
+						"Devices",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Device",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CavanMacphail",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"deviceId\": 11,\r\n        \"userId\" : 1,\r\n        \"name\": \"Thermostat\",\r\n        \"status\": \"Available\",\r\n        \"mode\": \"Enabled\",\r\n        \"User\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7095/api/Devices",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7095",
+					"path": [
+						"api",
+						"Devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Device",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PatchMode",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Disabled\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7095/api/Devices/9f68b236-3fe4-4eca-9264-3cda15a84ad6/f31ec5b9-4cd1-4a09-91f3-642f72a8dd94",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7095",
+					"path": [
+						"api",
+						"Devices",
+						"9f68b236-3fe4-4eca-9264-3cda15a84ad6",
+						"f31ec5b9-4cd1-4a09-91f3-642f72a8dd94"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatchAvailble",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Availible\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7095/api/Devices/9f68b236-3fe4-4eca-9264-3cda15a84ad6/f31ec5b9-4cd1-4a09-91f3-642f72a8dd94",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7095",
+					"path": [
+						"api",
+						"Devices",
+						"9f68b236-3fe4-4eca-9264-3cda15a84ad6",
+						"f31ec5b9-4cd1-4a09-91f3-642f72a8dd94"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
